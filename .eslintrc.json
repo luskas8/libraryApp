@@ -1,6 +1,6 @@
 {
     "env": {
-        "es2021": true,
+        "es6": true,
         "node": true
     },
     "extends": [
@@ -9,6 +9,7 @@
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "project": "./tsconfig.json",
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -33,5 +34,5 @@
             "always"
         ]
     },
-    "ignorePatterns": ["src/**/*.test.ts", "node_modules"]
+    "ignorePatterns": ["src/**/*.test.ts", "*.config.*", "node_modules"]
 }
